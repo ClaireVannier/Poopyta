@@ -1,12 +1,16 @@
+<!-- src/app/components/header/header.component.html -->
 <header>
   <div class="poopyta-logo">
-    <img src="../../../assets/poopyta-logo.png" alt="logo de la tatoueuse" />
+    <a routerLink="/">
+      <img src="../../../assets/poopyta-logo.png" alt="logo de la tatoueuse" />
+    </a>
   </div>
   <nav class="nav-bar">
     <ul>
       <li><a routerLink="/about">À propos de moi</a></li>
-      <li><a routerLink="/gallery">Les projets</a></li>
+      <li><a routerLink="/gallery">Les flashs</a></li>
       <li><a routerLink="/contact">Contactez-moi !</a></li>
     </ul>
   </nav>
+  <div class="separate-ligne"></div>
 </header>
