@@ -1,11 +1,17 @@
+/* src/app/footer/footer.component.scss */
 footer {
-  background-color: #86725D;
-  color: white;
+  color: #2F4858;
   text-align: center;
   padding: 20px 0;
-  position: fixed;
   width: 100%;
   bottom: 0;
+
+  .separate-ligne {
+    width: 40%;
+    height: 1px;
+    background-color: darkgrey;
+    margin: 20px auto; /* Ajout de marge pour espacer */
+  }
 
   p {
     margin: 0;

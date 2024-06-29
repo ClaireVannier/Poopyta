@@ -1,5 +1,17 @@
-// src/app/app.component.scss
+/* src/app/app.component.scss */
+.content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 main {
-    padding-bottom: 60px; // Pour éviter que le contenu soit caché derrière le footer
-  }
-  
+  flex: 1; /* Prendre tout l'espace disponible sauf celui réservé pour le header et le footer */
+}
+
+.separate-ligne {
+  width: 40%;
+  height: 1px;
+  background-color: darkgrey;
+  margin: 20px auto; /* Ajout de marge pour espacer */
+}
