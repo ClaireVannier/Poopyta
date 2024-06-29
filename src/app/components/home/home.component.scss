@@ -1,0 +1,13 @@
+// home.component.sass
+.home
+  background-image: url('/assets/background.jpg')
+  background-size: cover
+  color: white
+  text-align: center
+  padding: 100px 20px
+
+  h1
+    font-size: 3em
+
+  p
+    font-size: 1.5em

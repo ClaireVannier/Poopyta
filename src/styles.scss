@@ -1,0 +1,18 @@
+// src/styles.sass
+
+body
+  font-family: Arial, sans-serif
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+.home, .about, .gallery, .contact
+  padding: 20px
+
+h1, h2
+  color: #333
+
+.photos img
+  width: 100%
+  height: auto
+  margin-bottom: 10px

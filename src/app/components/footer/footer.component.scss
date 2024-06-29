@@ -1,0 +1,17 @@
+// src/app/footer/footer.component.sass
+footer
+  background-color: #333
+  color: white
+  text-align: center
+  padding: 20px 0
+  position: fixed
+  width: 100%
+  bottom: 0
+
+  p
+    margin: 0
+    font-size: 0.9em
+
+  p:last-of-type
+    margin-top: 5px
+    font-size: 0.8em
