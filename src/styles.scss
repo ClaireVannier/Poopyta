@@ -1,4 +1,8 @@
-// src/styles.scss
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   font-family: Arial, sans-serif;
@@ -19,4 +23,8 @@ h1, h2 {
   width: 100%;
   height: auto;
   margin-bottom: 10px;
+}
+
+a, li, ul, ol {
+  list-style: none;
 }

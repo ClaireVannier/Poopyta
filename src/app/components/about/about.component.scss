@@ -1,8 +1,13 @@
-// about.component.sass
-.about
-  h2
-    margin-bottom: 20px
-
-  p
-    font-size: 1.2em
-    line-height: 1.5
+/* src/app/about/about.component.scss */
+.about {
+  padding: 20px;
+  h2 {
+    font-family: 'Old Standard TT', serif;
+    color: #b33;
+  }
+  img {
+    width: 100%;
+    border: 5px solid #ccc;
+    margin-top: 20px;
+  }
+}

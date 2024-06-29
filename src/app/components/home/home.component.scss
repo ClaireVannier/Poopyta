@@ -1,13 +1,16 @@
-// home.component.sass
-.home
-  background-image: url('/assets/background.jpg')
-  background-size: cover
-  color: white
-  text-align: center
-  padding: 100px 20px
-
-  h1
-    font-size: 3em
-
-  p
-    font-size: 1.5em
+/* src/app/home/home.component.scss */
+.home {
+  text-align: center;
+  color: #333;
+  padding: 20px;
+  background-image: url('assets/images/background.jpg');
+  background-size: cover;
+  h1, h2 {
+    font-family: 'Old Standard TT', serif;
+  }
+  img {
+    width: 100%;
+    border: 5px solid #ccc;
+    margin-top: 20px;
+  }
+}
