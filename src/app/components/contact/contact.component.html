@@ -1,32 +1,17 @@
 <div class="contact">
   <h2>Contactez-moi</h2>
   <p>N'hésitez pas à me contacter pour toute question ou pour prendre rendez-vous.</p>
-  <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-    <div class="form-group">
-      <label for="name">Nom</label>
-      <input type="text" id="name" name="name" ngModel required>
-      <div *ngIf="contactForm.submitted && contactForm.controls['name']?.invalid">
-        <small class="error">Le nom est requis.</small>
-      </div>
-    </div>
-    <div class="form-group">
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" ngModel required email>
-      <div *ngIf="contactForm.submitted && contactForm.controls['email']?.invalid">
-        <small class="error">Veuillez entrer une adresse email valide.</small>
-      </div>
-    </div>
-    <div class="form-group">
-      <label for="message">Message</label>
-      <textarea id="message" name="message" ngModel required [minlength]="100"></textarea>
-      <div *ngIf="contactForm.submitted && contactForm.controls['message']?.errors?.['minlength']">
-        <small class="error">Le message doit contenir au moins 100 caractères.</small>
-      </div>
-    </div>
-    <div class="form-group">
-      <label for="photos">Photos</label>
-      <input type="file" id="photos" name="photos" (change)="onFileChange($event)" accept=".jpg,.jpeg" multiple>
-    </div>
-    <button type="submit">Envoyer</button>
-  </form>
+  <div class="contact-info">
+    <h3>Informations de contact</h3>
+    <p>Email : <a href="mailto:lacroix.elina@gmail.com">lacroix.elina&#64;gmail.com</a></p>
+    <p>Téléphone : <a href="tel:+33612345678">+33 6 12 34 56 78</a></p>
+  </div>
+  <div class="social-media">
+    <h3>Suivez-moi sur les réseaux sociaux</h3>
+    <ul>
+      <li><a href="https://www.instagram.com/votreprofil" target="_blank">Instagram</a></li>
+      <li><a href="https://www.facebook.com/votreprofil" target="_blank">Facebook</a></li>
+      <li><a href="https://twitter.com/votreprofil" target="_blank">Twitter</a></li>
+    </ul>
+  </div>
 </div>

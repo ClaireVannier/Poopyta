@@ -24,73 +24,45 @@
     margin-bottom: 30px;
   }
 
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  .contact-info, .social-media {
+    margin-bottom: 20px;
 
-    .form-group {
-      display: flex;
-      flex-direction: column;
-
-      label {
-        font-family: 'Montserrat', sans-serif;
-        margin-bottom: 8px;
-        font-weight: 700;
-        color: #333;
-      }
-
-      input,
-      textarea {
-        font-family: 'Montserrat', sans-serif;
-        padding: 12px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        font-size: 1.2em;
-        transition: border-color 0.3s ease;
-        
-        &:focus {
-          border-color: #884B49;
-          outline: none;
-        }
-      }
-
-      textarea {
-        min-height: 150px;
-        resize: vertical;
-      }
-
-      input[type="file"] {
-        padding: 5px;
-        font-family: 'Montserrat', sans-serif;
-      }
-
-      .error {
-        color: red;
-        font-size: 0.9em;
-        margin-top: 5px;
-      }
+    h3 {
+      font-family: 'Old Standard TT', serif;
+      color: #884B49;
+      margin-bottom: 10px;
+      text-align: center;
     }
 
-    button {
-      padding: 12px 20px;
+    p, a {
       font-family: 'Montserrat', sans-serif;
-      font-size: 1.2em;
-      color: #fff;
-      background-color: #884B49;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-      align-self: center;
+      font-size: 1em;
+      color: #333;
+      text-decoration: none;
 
-      &:disabled {
-        background-color: #ccc;
-        cursor: not-allowed;
+      &:hover {
+        color: #884B49;
       }
+    }
+  }
 
-      &:hover:not(:disabled) {
-        background-color: #b33;
+  .social-media ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+    li {
+      display: inline;
+
+      a {
+        font-size: 1.2em;
+        color: #555;
+
+        &:hover {
+          color: #884B49;
+        }
       }
     }
   }

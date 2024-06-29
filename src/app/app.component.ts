@@ -11,7 +11,7 @@ import { ContactComponent } from './components/contact/contact.component';
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss',
-    imports: [RouterOutlet, RouterLink, HeaderComponent, FooterComponent, HttpClientModule, FormsModule, ContactComponent]
+    imports: [RouterOutlet, RouterLink, HeaderComponent, FooterComponent, HttpClientModule, FormsModule]
 })
 export class AppComponent {
   title = 'Poopyta';
