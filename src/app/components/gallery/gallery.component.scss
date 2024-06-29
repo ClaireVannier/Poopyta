@@ -1,16 +1,18 @@
 /* src/app/gallery/gallery.component.scss */
 .gallery {
-  padding: 30px 20px; // Marges extérieures de 30px en haut et 20px sur les côtés
   gap: 25px; // Espace entre les sections de la galerie
 
   h2 {
     font-family: 'Old Standard TT', serif;
     color: #884B49;
+    margin: 0 25px;
   }
 
   p {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2em;
+    margin: 0 25px;
+
   }
 
   .photos {

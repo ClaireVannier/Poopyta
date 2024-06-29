@@ -4,6 +4,11 @@
   text-align: center;
   color: #333;
 
+  img {
+    width: 200px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+  }
   .welcome {
     h1, h2 {
       font-family: 'Old Standard TT', serif;
@@ -12,6 +17,12 @@
       font-size: 1.2em;
       margin-top: 10px;
     }
+  }
+
+  .description {
+    width: 500px;
+    margin: auto;
+    text-align: left;
   }
 
   .separate-ligne {
