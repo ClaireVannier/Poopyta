@@ -1,5 +1,7 @@
+/* src/app/pages/contact/contact.component.scss */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
 
 .contact {
   padding: 30px 20px;
@@ -24,7 +26,7 @@
     margin-bottom: 30px;
   }
 
-  .contact-info, .social-media {
+  .contact-info, .social-media, .contact-form, .map {
     margin-bottom: 20px;
 
     h3 {
@@ -60,10 +62,70 @@
         font-size: 1.2em;
         color: #555;
 
+        i {
+          margin-right: 8px;
+        }
+
         &:hover {
           color: #884B49;
         }
       }
+    }
+  }
+
+  .contact-form {
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+
+      label {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1em;
+        color: #333;
+        text-align: left;
+        width: 100%;
+      }
+
+      input, textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1em;
+
+        &:focus {
+          border-color: #884B49;
+          outline: none;
+        }
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: #884B49;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1em;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: #5D7C6D;
+        }
+      }
+    }
+  }
+
+  .map {
+    iframe {
+      border: 0;
+      width: 100%;
+      height: 300px;
+      border-radius: 8px;
     }
   }
 }

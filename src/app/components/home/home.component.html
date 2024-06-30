@@ -1,78 +1,12 @@
 <!-- src/app/home/home.component.html -->
 <div class="home">
-  <section class="welcome">
-    <div class="profile-container">
-      <img
-        src="../../../assets/tattoo-artist.jpg"
-        alt="Tatoueuse Elina"
-        class="profile-pic"
-      />
-    </div>
-    <h1>Bienvenue chez Elina alias Poopyta 🌸</h1>
-    <h2>Artiste tatoueuse à Bordeaux, Rue des Menuts</h2>
-    <p>
-      Offrant des tatouages uniques et personnalisés dans un cadre chaleureux et
-      vintage.
-    </p>
-  </section>
-
+  <app-welcome></app-welcome>
   <div class="separate-ligne"></div>
-
-  <section class="description">
-    <p>
-      Bienvenue dans mon univers ! Je suis Elina, alias Poopyta, une artiste
-      tatoueuse de 25 ans passionnée par l’art du tatouage et l’esthétique
-      vintage des années 80 à 2000. Avec une énergie débordante et une touche
-      personnelle, je transforme chaque tatouage en une véritable œuvre d’art.
-      Que vous cherchiez un design délicat ou une pièce audacieuse, je saurai
-      réaliser votre vision avec précision et créativité. <br />
-      Venez découvrir mon univers artistique et laissez-vous inspirer par mon
-      talent exceptionnel. <br />
-      Ensemble, donnons vie à vos idées et créons des souvenirs indélébiles !
-    </p>
-  </section>
-
+  <app-description></app-description>
   <div class="separate-ligne"></div>
-
-  <section class="gallery">
-    <h2>Mes Récents Tattoos 🕸️</h2>
-    <div class="images">
-      <img src="assets/tattoo1.jpg" alt="Tatouage 1" />
-      <img src="assets/tattoo2.jpg" alt="Tatouage 2" />
-      <img src="assets/tattoo3.jpg" alt="Tatouage 3" />
-      <img src="assets/tattoo4.jpg" alt="Tatouage 4" />
-      <img src="assets/tattoo5.jpg" alt="Tatouage 5" />
-      <img src="assets/tattoo6.jpg" alt="Tatouage 6" />
-      <img src="assets/tattoo7.jpg" alt="Tatouage 7" />
-      <img src="assets/tattoo8.jpg" alt="Tatouage 8" />
-      <img src="assets/tattoo9.jpg" alt="Tatouage 9" />
-    </div>
-  </section>
-
+  <app-tattos/>
   <div class="separate-ligne"></div>
-
-  <section class="testimonials">
-    <h2>Vos précieux avis 🫶🏻</h2>
-    <div class="testimonial">
-      <p>
-        "Une expérience incroyable! Le tatouage est magnifique et l'ambiance du
-        studio est parfaite." - Marie
-      </p>
-    </div>
-    <div class="testimonial">
-      <p>
-        "Une artiste talentueuse avec une passion pour le détail. Je recommande
-        vivement!" - Claire
-      </p>
-    </div>
-  </section>
-
+  <app-testimonials></app-testimonials>
   <div class="separate-ligne"></div>
-
-  <section class="call-to-action">
-    <p>
-      Prenez rendez-vous aujourd'hui pour créer votre prochaine œuvre d'art.
-    </p>
-    <button routerLink="/contact">Contactez-nous</button>
-  </section>
+  <app-call-to-action></app-call-to-action>
 </div>
