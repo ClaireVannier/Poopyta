@@ -7,16 +7,15 @@
     overflow: hidden;
 
     .banner-img {
-      background-image: url('../../../assets/banner.png');
+      background-image: url("../../../assets/banner.png");
       background-size: cover;
       background-position: center;
       height: 100%;
       width: 100%;
-      border-top: 3px solid #884B49;
-      border-bottom: 3px solid #884B49;
+      border-top: 3px solid #884b49;
+      border-bottom: 3px solid #884b49;
       border-radius: 0;
       box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-
     }
   }
 
@@ -30,12 +29,7 @@
       margin-top: 20px;
     }
 
-    h1, h2 {
-      font-family: 'Old Standard TT', serif;
-    }
-
     p {
-      font-size: 1.2em;
       margin-top: 10px;
     }
   }
@@ -44,10 +38,10 @@
     .banner-container {
       height: 200px;
       margin-bottom: 10px;
-      
-    .banner-img {
-      height: 180px;
-    }
+
+      .banner-img {
+        height: 180px;
+      }
     }
 
     .welcome-description {
@@ -56,15 +50,14 @@
 
       h1 {
         margin-top: 10px;
-        font-size: 1.5em;
+        font-size: 26px;
       }
 
       h2 {
-        font-size: 1.2em;
+        font-size: 20px;
       }
 
       p {
-        font-size: 1em;
         margin-top: 5px;
       }
     }

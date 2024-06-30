@@ -4,7 +4,6 @@
   text-align: left;
 
   p {
-    font-size: 1.2em;
     margin: 10px 0;
   }
 
@@ -19,15 +18,9 @@
 
   @media (max-width: 468px) {
     width: 90%;
-    font-size: 1em;
 
     p {
-      font-size: 13px;
-      margin: 8px 0;
-    }
-
-    a {
-      font-size: 1em;
+      margin: 10px;
     }
   }
 }
