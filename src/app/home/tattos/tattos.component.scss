@@ -1,27 +1,37 @@
-.gallery {
-  h2 {
-    font-family: "Old Standard TT", serif;
-    color: #884b49;
-    margin-bottom: 20px;
-  }
+h2 {
+  margin-bottom: 10px;
+}
 
-  .images {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 15px;
+.images {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 15px;
+  border-radius: 5px;
+
+  img {
     border-radius: 5px;
+    width: 400px;
+    margin-bottom: 20px;
+    border: 3px solid #86725d;
+    transition: transform 0.3s;
 
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+@media (max-width: 468px) {
+  .images {
+    gap: 20px;
+    padding: 25px;
+    border-radius: 0;
+    
     img {
-      border-radius: 5px;
-      width: 400px;
-      margin-bottom: 20px;
-      border: 3px solid #86725d;
-      transition: transform 0.3s;
-
-      &:hover {
-        transform: scale(1.05);
-      }
+      width: 100%;
+      border: 7px solid #000000;
+      padding: 20px;
+      background-color: #d2bc9854;
     }
   }
 }

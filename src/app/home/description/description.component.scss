@@ -1,20 +1,33 @@
 .description {
-    width: 80%;
-    margin: auto;
-    text-align: left;
-  
-    p {
-      font-size: 1.2em;
-      margin: 10px 0;
-    }
-  
-    a {
-      color: #884B49;
-      text-decoration: none;
-  
-      &:hover {
-        text-decoration: underline;
-      }
+  width: 80%;
+  margin: auto;
+  text-align: left;
+
+  p {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+
+  a {
+    color: #884B49;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
     }
   }
-  
+
+  @media (max-width: 468px) {
+    width: 90%;
+    font-size: 1em;
+
+    p {
+      font-size: 13px;
+      margin: 8px 0;
+    }
+
+    a {
+      font-size: 1em;
+    }
+  }
+}
