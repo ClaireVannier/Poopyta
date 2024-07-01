@@ -90,6 +90,7 @@
         border: 1px solid #ccc;
         border-radius: 4px;
         resize: none;
+        font-family: 'MontSerrat', sans-serif;
 
         &:focus {
           border-color: #884b49;
@@ -108,7 +109,8 @@
         transition: background-color 0.3s;
 
         &:hover {
-          background-color: #5d7c6d;
+          background-color: #91c8f3;
+          color: black;
         }
       }
     }

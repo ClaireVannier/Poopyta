@@ -2,7 +2,7 @@
 
 header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   padding: 20px;
 
@@ -10,17 +10,16 @@ header {
     img {
       height: 80px;
       width: auto;
-      padding-bottom: 20px;
     }
   }
 
   .nav-bar {
     ul {
       display: flex;
-      gap: 60px;
+      gap: 20px;
 
       li {
-        margin-left: 20px;
+        list-style: none;
 
         a {
           text-decoration: none;
@@ -38,10 +37,10 @@ header {
           &:before,
           &:after {
             position: absolute;
-            left: 0;
-            width: 100%;
+            left: 50%;
+            width: 0;
             height: 1px;
-            background: #2f4858;
+            background: #91c8f3;
             content: "";
             opacity: 0;
             transition: all 0.3s;
@@ -49,18 +48,19 @@ header {
 
           &:before {
             top: 0;
-            transform: translateY(10px);
+            transform: translateX(-50%) translateY(10px);
           }
 
           &:after {
             bottom: 0;
-            transform: translateY(-10px);
+            transform: translateX(-50%) translateY(-10px);
           }
 
           &:hover:before,
           &:hover:after {
             opacity: 1;
-            transform: translateY(0);
+            width: 100%;
+            transform: translateX(-50%) translateY(0);
           }
         }
       }
@@ -68,12 +68,13 @@ header {
   }
 
   @media (max-width: 468px) {
+    flex-direction: column;
+    align-items: center;
     padding: 10px;
 
     .poopyta-logo {
       img {
         height: 60px;
-        padding-bottom: 10px;
       }
     }
 
@@ -83,7 +84,6 @@ header {
         gap: 20px;
 
         li {
-          margin-left: 0;
           text-align: center;
 
           a {
