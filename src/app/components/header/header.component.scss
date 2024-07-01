@@ -4,7 +4,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 30px;
 
   .poopyta-logo {
     img {
@@ -16,7 +16,7 @@ header {
   .nav-bar {
     ul {
       display: flex;
-      gap: 20px;
+      gap: 30px;
 
       li {
         list-style: none;
@@ -29,6 +29,7 @@ header {
           display: inline-block;
           padding: 10px 0;
           transition: color 0.3s;
+          font-size: 22Px;
 
           &:hover {
             color: #54422f;
